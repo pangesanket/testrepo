@@ -7,6 +7,9 @@ worked with jenkins :
                 *plugin management
 Alerting email
 GitHub building
+####################################
+                          DOCKER
+####################################
 Docker:- containerization
         OS level virtualiztion
 Namespace
@@ -17,4 +20,20 @@ container
 dockerhub
 registry
 repositary
-        
+###Modes of execution:- Foreground/Attched mode------> docker run centos
+                        Background/detached mode-----> docker run -d centos sleep 20
+                        Interactive mode   ----------> docker run -it centos
+
+PORT MAPPING/BINDING :-docker run -it -p 8085:8080 tomcat:latest
+                                        (host)(container) 
+Volumes:- stateless
+          stateful
+create a volume file in root and mount it to container--------> docker run -it --mount source=<name>,destination=/<name> centos/<image name>
+
+CREATE DOCEKR IMAGE :=   DOCKER COMMIT----- through conatiner_id--------> docker commit <conatiner_id> <namespace/imagename:latest>
+                         DOCKER BUILD--- create docker file in VI
+                                          from, run run ----------------> docker build -t <namespace/imagename:latest>
+
+HOW TO PUBLISH DOCKER IMAGE TO REGISTRY:= -----> docker login -u <username>  
+                                          -----> pass:- <ACCESS TOKEN>
+                                          -----> docker push <imagename>

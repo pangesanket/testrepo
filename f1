@@ -37,3 +37,5 @@ CREATE DOCEKR IMAGE :=   DOCKER COMMIT----- through conatiner_id--------> docker
 HOW TO PUBLISH DOCKER IMAGE TO REGISTRY:= -----> docker login -u <username>  
                                           -----> pass:- <ACCESS TOKEN>
                                           -----> docker push <imagename>
+
+Jenkins Master-slave configuration

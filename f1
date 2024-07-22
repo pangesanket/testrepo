@@ -39,3 +39,5 @@ HOW TO PUBLISH DOCKER IMAGE TO REGISTRY:= -----> docker login -u <username>
                                           -----> docker push <imagename>
 
 Jenkins Master-slave configuration
+master server---->
+node server------>

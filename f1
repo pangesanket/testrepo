@@ -42,4 +42,5 @@ Jenkins Master-slave configuration
 master server---->
 node server------>
 
-Kubernetes
+Orchestration tool:--->Kubernetes
+

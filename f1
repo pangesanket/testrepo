@@ -43,4 +43,12 @@ master server---->
 node server------>
 
 Orchestration tool:--->Kubernetes
-
+kubernetes Architecture:--------> Master node----> API Server
+                                            -----> etcd 
+                                           -----> controller manager
+                                             ----> Kube Scheduler
+                        
+                      ---------> WorkNodes------> CRI Docker
+                                          ------> Kubelet
+                                           -----> Kube_proxy
+                                          -------> Pods

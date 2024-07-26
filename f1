@@ -52,3 +52,4 @@ kubernetes Architecture:--------> Master node----> API Server
                                           ------> Kubelet
                                            -----> Kube_proxy
                                           -------> Pods
+Configuration and Installation

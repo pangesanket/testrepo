@@ -56,3 +56,6 @@ Configuration and Installation of kubernetes
 K8s master
 K8s WN1
 K8s WN2
+
+#######################
+Ansible and terraform

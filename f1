@@ -58,4 +58,5 @@ K8s WN1
 K8s WN2
 
 #######################
-Ansible and terraform
+Ansible and terraform 
+Prometheus Grafana

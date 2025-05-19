@@ -63,10 +63,16 @@ terraform
 Prometheus 
 Grafana
 
-docker 
-kubernetes 
-jenkins
-aws
+docker 0 to 1
+jenkins 0 to 1
+
+kubernetes cka and begineer
+
+Ansible begineer advanced and automation playbooks
+
+aws eks and aws certified solution
+
+terraform beginner
 azure
 gcp
 devsecops

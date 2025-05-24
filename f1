@@ -52,6 +52,15 @@ kubernetes Architecture:--------> Master node----> API Server
                                           ------> Kubelet
                                            -----> Kube_proxy
                                           -------> Pods
+
+
+
+POD v1
+Service v1
+ReplicaSet  apps/v1
+Deployment apps/v1
+
+
 Configuration and Installation of kubernetes
 K8s master
 K8s WN1
@@ -83,4 +92,56 @@ H1B
 H4
 GC
 F1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+SCENARIO
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+
+A new deployment has caused production downtime. Walk me through your troubleshooting steps and how you'd rollback safely.
+==>>
+- First, check monitoring/logs. 
+- Rollback via 'kubectl rollout undo' or revert Helm release. 
+- Perform root cause analysis (RCA) post-recovery.
+
+Your Jenkins pipeline is frequently failing due to intermittent test failures. How would you investigate and stabilize it?
+==>>
+- Analyze test logs, check flaky test patterns, isolate tests, and run them independently. 
+- Introduce retry logic and test parallelization.
+
+A security vulnerability has been found in one of your base images. What’s your approach to fixing this across all services?
+==>
+- Scan images using Trivy or Clair, update base image (e.g., python:3.11 → patched version), rebuild and redeploy. 
+- Use automated alerts for CVEs.
+
+Your Kubernetes pods are getting killed due to OOM (Out of Memory) errors. How would you debug and resolve this?
+==>
+- Check pod logs and describe output. Increase memory limit if justified. 
+- Optimize application memory usage or add liveness probes.
+
+The infrastructure team wants to migrate the CI/CD pipelines to another region or cloud provider. What are your key considerations?
+==>
+- Export pipeline definitions (e.g., Jenkinsfiles or GitLab CI YAML). 
+- Validate dependencies, test pipelines in the new region/cloud, and update secrets/envs securely.
+
+You need to onboard a new developer and give them minimal access to production. How would you set this up securely?
+==>
+- Assign read-only access to production logs via IAM or RBAC. 
+- Restrict AWS CLI/Kubeconfig access using least privilege principles.
+
+Your application has to be deployed in a multi-cloud environment with disaster recovery. How would you architect the DevOps process?
+==>
+- Use multi-region deployments with IaC, data replication (e.g., S3 cross-region), and DNS failover (e.g., Route 53). 
+- Ensure pipeline supports deploying to both clouds with toggles.
+
+
+
+
+
+
+
+
+
+
+
+
 

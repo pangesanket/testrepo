@@ -138,6 +138,11 @@ Your application has to be deployed in a multi-cloud environment with disaster r
 
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CI\CD
+SCM-->Unit Testing--> Building--> Docker Build--> Image push--> Image tag-->
+
+
 
 
 

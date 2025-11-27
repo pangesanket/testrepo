@@ -144,6 +144,19 @@ SCM-->Unit Testing--> Building--> Docker Build--> Image push--> Image tag-->
 
 
 
+Linux
+--> user management
+    file system
+    file permission
+    networking
+    monitoring(cpu,memory,disk)
+    services(systemctl)
+    package management
+    process management
+    disk partitioning
+ 
+
+
 
 
 

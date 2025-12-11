@@ -154,8 +154,21 @@ Linux
     package management
     process management
     disk partitioning
+    LVM (LV, PV, VG)
+    RAID
 hard link 
 soft link
+
+ACLS, sudoers, 
+systemd services
+shell scripting
+cron jobs and automation
+ ssh configuration and key based authentication
+ log monitoring tools(top, htop, vmstat, iostat, sar)
+git basics
+VMware/virtualBox
+DevOPs
+
  
 
 
